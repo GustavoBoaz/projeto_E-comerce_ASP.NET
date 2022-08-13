@@ -21,7 +21,7 @@ namespace EGeladinho.Src.Models
         public string Image { get; set; }
         public Category Category { get; set; }
 
-        [InverseProperty("Product")]
+        [JsonIgnore, InverseProperty("Product")]
         public List<Cart> Carts { get; set; }
     }
 

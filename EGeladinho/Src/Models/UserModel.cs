@@ -18,7 +18,7 @@ namespace EGeladinho.Src.Models
         public string Password { get; set; }
         public string Document { get; set; }
 
-        [InverseProperty("Buyer")]
+        [JsonIgnore, InverseProperty("Buyer")]
         public List<Cart> MyCarts { get; set; }
     }
 }
